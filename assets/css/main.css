@@ -274,9 +274,9 @@ h6 {
 }
 
 @media (max-width: 991px) {
-  .navmenu {
+  /* .navmenu {
     display: none;
-  }
+  } */
 
   .nav-buttons {
     display: none;
@@ -290,7 +290,6 @@ h6 {
 .scrolled .navmenu.navbar-bg-sec {
   background: transparent;
 }
-
 
 /* .header .logo {
   line-height: 1;
@@ -411,10 +410,10 @@ h6 {
   .navmenu .active:focus {
     /* color: var(--nav-hover-color); */
     color: black;
-    background: #EEEEEE;
+    background: #eeeeee;
     border-radius: 20px;
   }
-/*   
+  /*   
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
@@ -551,7 +550,7 @@ h6 {
     color: var(--contrast-color);
     transform: rotate(180deg);
   }
-/* 
+  /* 
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -578,7 +577,8 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    /* color: #fff; */
+    color: black;
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -898,7 +898,6 @@ section,
   font-weight: bold;
 }
 .hero-content p {
-  width: var(--container-widget-width, 765px);
   max-width: 765px;
   margin: 20px 0px calc(var(--kit-widget-spacing, 0px) + 20px) 0px;
   --container-widget-width: 765px;
@@ -927,6 +926,10 @@ section,
 @media (max-width: 575px) {
   .hero .hero-content h1 {
     font-size: 2rem;
+  }
+  .heading-title {
+    font-size: 85px;
+    line-height: 62px;
   }
 }
 
@@ -1037,52 +1040,7 @@ section,
     max-width: 250px;
   }
 }
-/*----svg animation----*/
-.rotating-svg {
-  position: absolute;
-  width: 50vw; /* use viewport width for responsiveness */
-  max-width: 800px;
-  height: auto;
-  opacity: 0.6;
-  z-index: 0;
-  pointer-events: none; /* ensures it doesn’t block interactions */
-}
 
-.rotating-svg svg {
-  width: 100%;
-  height: auto;
-}
-
-.rotating-left {
-  top: -15%;
-  left: -35%;
-}
-
-.rotating-right {
-  top: -15%;
-  right: -35%;
-}
-
-.rotating-svg .rotating {
-  transform-origin: center;
-  animation: spin 15s linear infinite;
-  will-change: transform; /* for smoother GPU rendering */
-}
-
-.rotating-svg svg:hover .rotating {
-  animation-play-state: paused;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Ensure SVGs stay behind content */
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -1317,7 +1275,6 @@ section,
   width: auto;
 }
 .subtitle-para {
-  width: var(--container-widget-width, 620px);
   max-width: 620px;
   margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 50px) 0px;
   --container-widget-width: 620px;
@@ -2218,9 +2175,8 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-box {
+/* .contact .info-box {
   background-color: var(--accent-color);
-  /* background-color:  #fc0000ce; */
   color: var(--contrast-color);
   padding: 3rem;
   border-radius: 1rem;
@@ -2372,7 +2328,7 @@ section,
     var(--accent-color),
     var(--contrast-color) 20%
   );
-}
+} */
 
 /*--------------------------------------------------------------
 # Service Details Section
@@ -2695,3 +2651,131 @@ feature-sec
   padding: 80px 0;
   border-radius: 20px;
 }
+/*-------------*/
+.analytic-result-sec{
+  padding-left: 30px;
+}
+.subtitle-badge.analytic-result {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: black;
+  padding: 12px 28px;
+  margin-bottom: 10px;
+  border: 1px solid #eeeeee;
+  background-color: #f1fee1;
+  -webkit-border-radius: 999px;
+  -moz-border-radius: 999px;
+  border-radius: 999px;
+  width: 40%;
+}
+/* Extra small devices (≤480px) */
+@media (max-width: 480px) {
+  .subtitle-badge.analytic-result {
+    width: 45%;
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+  .analytic-result-sec{
+  padding-left: 10px;
+}
+}
+/*----svg animation----*/
+.rotating-svg {
+  position: absolute;
+  width: 50vw; /* use viewport width for responsiveness */
+  max-width: 800px;
+  height: auto;
+  opacity: 0.6;
+  z-index: 0;
+  pointer-events: none; /* ensures it doesn’t block interactions */
+}
+
+.rotating-svg svg {
+  width: 100%;
+  height: auto;
+}
+
+.rotating-left {
+  top: -15%;
+  left: -35%;
+}
+
+.rotating-right {
+  top: -15%;
+  right: -35%;
+}
+
+.rotating-svg .rotating {
+  transform-origin: center;
+  animation: spin 15s linear infinite;
+  will-change: transform; /* for smoother GPU rendering */
+}
+
+.rotating-svg svg:hover .rotating {
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Tablet view (≤1024px) */
+@media (max-width: 1024px) {
+  .rotating-svg {
+    width: 60vw;
+    opacity: 0.5;
+  }
+
+  .rotating-left {
+    top: -10%;
+    left: -25%;
+  }
+
+  .rotating-right {
+    top: -10%;
+    right: -25%;
+  }
+}
+
+/* Mobile view (≤768px) */
+@media (max-width: 768px) {
+  .rotating-svg {
+    width: 40vw;
+    opacity: 0.4;
+  }
+
+  .rotating-left {
+    top: -5%;
+    left: -15%;
+  }
+
+  .rotating-right {
+    top: -5%;
+    right: -15%;
+  }
+}
+
+/* Extra small screens (≤480px) */
+@media (max-width: 480px) {
+  .rotating-svg {
+    width: 100vw;
+    opacity: 0.3;
+  }
+
+  .rotating-left,
+  .rotating-right {
+    top: 0;
+    left: auto;
+    right: auto;
+    transform: translateX(-50%);
+  }
+}
+/* Ensure SVGs stay behind content */
