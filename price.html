@@ -49,6 +49,17 @@
             background: #F1FEE1;
             /* border-top: 1px solid #ddd; */
         }
+
+        .hero.pricing-page {
+            position: relative;
+            padding-top: 160px;
+            background-color: #f1fee1 !important;
+            background-image: none !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
     </style>
 </head>
 
@@ -72,9 +83,9 @@
                     <!-- <li><a href="#about">About</a></li> -->
                     <li><a href="#">Features</a></li>
                     <!-- <li><a href="#services">Services</a></li> -->
-                    <li><a href="price.html">Pricing</a></li>
+                    <li><a href="price.html" class="active">Pricing</a></li>
                     <li>
-                        <a href="blog.html" class="active">Blog</a>
+                        <a href="blog.html" class="">Blog</a>
                     </li>
                     <li>
                         <a href="https://udigi.in/" target="_blank">Academy</a>
@@ -96,7 +107,7 @@
     <main class="main">
 
         <!-- Hero Section -->
-        <section id="hero" class="hero section position-relative overflow-hidden">
+        <section id="hero" class="hero pricing-page section position-relative overflow-hidden">
 
             <!-- Rotating SVGs (Top Left + Top Right) -->
             <div class="rotating-svg rotating-left">
@@ -160,18 +171,14 @@
             <div class="container">
                 <div class="d-flex flex-column justify-content-center align-items-center text-center">
                     <!-- Breadcrumbs -->
+                    <h1 class="blog-page-title">Our Pricing</h1>
+
                     <ul id="sasi-breadcrumbs" class="sasi-breadcrumbs list-unstyled d-flex align-items-center mb-3">
                         <li><a href="https://sasico.pikathemes.site"><i class="bi bi-house-door-fill me-1"></i>Home</a>
                         </li>
                         <li><i class="bi bi-chevron-right mx-2"></i></li>
-                        <li><a href="https://sasico.pikathemes.site/blog-standard/">Blog Standard</a></li>
-                        <li><i class="bi bi-chevron-right mx-2"></i></li>
-                        <li class="active text-secondary">Blog Details</li>
+                        <li class="active text-secondary">Pricing Details</li>
                     </ul>
-
-                    <!-- Post Title -->
-                    <h1 class="single-blog-post-title mb-3">Why Your Business Needs a Strong Digital Presence in 2025
-                    </h1>
 
                 </div>
 
@@ -180,112 +187,181 @@
 
         </section>
         <!-- /Hero Section -->
-        <section class="sasi-single-section">
-            <div class="container">
-                <div class="row justify-content-center g-5">
+        <!-- Pricing Section -->
+        <section id="" class="pricing">
 
-                    <!-- Blog Article -->
-                    <div class="col-lg-8">
-                        <article class="sasi-single-article">
-                            <div class="sasi-post-img mb-4">
-                                <img src="https://sasico.pikathemes.site/wp-content/uploads/2025/07/single-blog.webp"
-                                    alt="Why Your Business Needs a Strong Digital Presence in 2025">
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <div class="subtitle-badge mb-3 text-uppercase fw-medium" data-aos="fade-up" data-aos-delay="100">
+                    Choose a plan
+                </div>
+                <h2>Flexible Pricing for Every Stage</h2>
+                <p class="subtitle-para text-muted mx-auto" style="max-width: 600px;">Whether you’re just getting
+                    started or
+                    scaling fast, we’ve got a pricing plan that fits your needs. Our
+                    transparent and flexible packages are designed</p>
+            </div><!-- End Section Title -->
+
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Basic Plan -->
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pricing-card">
+                            <h3>Basic Plan</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>
+                                <span class="amount">2999</span>
+                                <span class="period">/ month</span>
                             </div>
+                            <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium
+                                doloremque laudantium totam.</p>
 
-                            <div class="sasi-post-content">
-                                <p>In today's fast-paced digital world, having a strong online presence is no longer
-                                    optional for
-                                    businesses; it's a necessity...</p>
+                            <h4>For Small Business:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Manage 2 Projects
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Access detailed Facebook Ad Set audience
+                                    insights
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Receive 2 professional social media posters
+                                    for Ads
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    20 Fast Indexing Backlinks
+                                </li>
+                            </ul>
 
-                                <h2>1. Reach a Wider Audience</h2>
-                                <p>With billions of people using the internet daily, a strong digital presence allows
-                                    your business to reach a global audience...</p>
-
-                                <h2>2. Build Brand Awareness</h2>
-                                <p>A well-maintained digital presence helps establish and enhance your brand identity...
-                                </p>
-
-                                <h2>3. Engage with Customers</h2>
-                                <p>Digital platforms provide an excellent opportunity for businesses to interact
-                                    directly with their customers...</p>
-
-                                <h2>4. Cost-Effective Marketing</h2>
-                                <p>Compared to traditional marketing methods, digital marketing is often more
-                                    affordable...</p>
-
-                                <h2>5. Stay Competitive</h2>
-                                <p>Your competitors are likely already leveraging digital marketing strategies...</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn-login-unique">
+                                    Explore All <i class="btn-login-unique-icon bi bi-arrow-right"></i>
+                                </a>
                             </div>
-                        </article>
+                        </div>
                     </div>
 
-                    <!-- Sidebar -->
-                    <!-- Sidebar -->
-                    <div class="col-lg-4">
-                        <aside class="sasi-blog-sidebar">
-
-                            <!-- Categories -->
-                            <div class="sasi-sidebar-block mb-5">
-                                <h4 class="sasi-sidebar-title">Categories</h4>
-                                <ul class="sasi-sidebar-categories p-0 m-0">
-                                    <li><a href="#">Digital Marketing</a></li>
-                                    <li><a href="#">SaaS Solutions</a></li>
-                                    <li><a href="#">Business Growth</a></li>
-                                    <li><a href="#">Technology Trends</a></li>
-                                    <li><a href="#">Productivity Tips</a></li>
-                                </ul>
+                    <!-- Standard Plan -->
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="pricing-card popular">
+                            <div class="popular-badge">Most Popular</div>
+                            <h3>Standard Plan</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>
+                                <span class="amount">4999</span>
+                                <span class="period">/ month</span>
                             </div>
+                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                                blanditiis
+                                praesentium voluptatum.</p>
 
-                            <!-- Recent Blogs -->
-                            <div class="sasi-sidebar-block">
-                                <h4 class="sasi-sidebar-title">Recent Posts</h4>
-                                <ul class="sasi-sidebar-recent p-0 m-0">
-                                    <li>
-                                        <a href="#">
-                                            <div class="sasi-recent-thumb">
-                                                <img src="https://sasico.pikathemes.site/wp-content/uploads/2025/07/single-blog.webp"
-                                                    alt="Post 1">
-                                            </div>
-                                            <div class="sasi-recent-info">
-                                                <h6>Top 2025 SaaS Trends & Productivity Features</h6>
-                                                <span>Oct 10, 2025</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="sasi-recent-thumb">
-                                                <img src="https://sasico.pikathemes.site/wp-content/uploads/2025/06/saas-growth.webp"
-                                                    alt="Post 2">
-                                            </div>
-                                            <div class="sasi-recent-info">
-                                                <h6>How to Choose the Right SaaS Solution</h6>
-                                                <span>Oct 5, 2025</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <div class="sasi-recent-thumb">
-                                                <img src="https://sasico.pikathemes.site/wp-content/uploads/2025/05/team-collaboration.webp"
-                                                    alt="Post 3">
-                                            </div>
-                                            <div class="sasi-recent-info">
-                                                <h6>The Future of Work: Remote Collaboration</h6>
-                                                <span>Sep 30, 2025</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
+                            <h4>Perfect for Freelancers:</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Access detailed Facebook Ad Set audience
+                                    insights
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Get 2 Times expert support sessions monthly
+                                    from the Adsetspro team
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Receive 4 professional social media posters for
+                                    Ads
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Limited SEO Team support
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    40 Fast Indexing Backlinks
+                                </li>
+                            </ul>
+
+
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn-login-unique">
+                                    Explore All <i class="btn-login-unique-icon bi bi-arrow-right"></i>
+                                </a>
                             </div>
-
-                        </aside>
+                        </div>
                     </div>
 
+                    <!-- Premium Plan -->
+                    <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="pricing-card">
+                            <h3>Advanced</h3>
+                            <div class="price">
+                                <span class="currency">₹</span>
+                                <span class="amount">7999</span>
+                                <span class="period">/ month</span>
+                            </div>
+                            <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
+                                quam nihil
+                                molestiae.</p>
+
+                            <h4>For Inhouse & Agency::</h4>
+                            <ul class="features-list">
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Manage 6 projects
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Access detailed Facebook Ad Set audience insights
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Get 4 expert support sessions monthly from the Adsetspro team
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Receive 6 professional social media posters for ads
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Limited website development assistance
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Social media account creation
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    Unlimited SEO team support
+                                </li>
+                                <li>
+                                    <i class="bi bi-check-circle-fill"></i>
+                                    80 fast indexing backlinks
+                                </li>
+                            </ul>
+
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="btn-login-unique">
+                                    Explore All <i class="btn-login-unique-icon bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
             </div>
+
         </section>
+        <!-- /Pricing Section -->
 
 
 
