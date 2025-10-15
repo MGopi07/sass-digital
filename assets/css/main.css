@@ -3468,7 +3468,7 @@ Sidebar
 .sasi-sidebar-categories {
   list-style: square;
   margin: 0;
-  padding: 0 0 0 25px;
+  padding: 0 0 0 25px !important;
 }
 
 .sasi-sidebar-categories li {
